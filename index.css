@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe&family=Roboto&display=swap');
+
+
+
+
+#video_background {
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1000;
+    overflow: hidden;
+    }
+#video_pattern {
+        background:#fff;
+        position: fixed;
+        opacity: 0.8;
+        left: 0px;
+        top: 0px;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        }    
+
+body{
+    margin: 0px;
+}        
+.navPrinc{
+    
+    position: fixed;
+    padding-left: 100px;
+    padding-right: 100px;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    height: 80px;
+    width: 90%;
+    left: 0%;
+    top: 0%;
+    background-color: rgba(0, 0, 0, 0.735);
+    margin:0px;
+    align-items: center;
+
+}        
+
+.navPrinc button{
+    background-color: transparent;
+    color: #fff;
+    border: 0px;
+    width: 120px;
+    height: 70px;
+    border-radius: 2px;
+    transition: 1.5s;
+    font-family: 'Alumni Sans Pinstripe', sans-serif;
+    font-size: 30px;
+
+}
+.navPrinc button:hover{
+    background-color: white;
+    color: black;
+    border: 0px;
+
+}
+.navPrinc h1{
+    font-family: 'Alumni Sans Pinstripe', sans-serif;
+    margin: 0;
+    color: white;
+}
+.titulo{
+    padding: 5px;
+
+}
+.titulo:hover{
+    border: 1px solid #fff;
+    padding: 5px;
+    transition: 1.6s;
+}
+.container1{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+.container2{
+    height: 1000px;
+    width: 100% ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.tituloContainer2{
+    color: #fff;
+    margin-bottom: 5%;
+}
+.textContainer2{
+    width: 70%;
+    height: 40%;
+    background-color: #fff;
+    border-radius: 10px;
+    transition: 1.5s;
+    display: flex;
+    flex-direction: column;
+}
+.textContainer2:hover{
+    box-shadow: -1px 4px 7px 5px rgba(218, 218, 218, 0.63);
+
+}
+.containerTitulo{
+    font-family: 'Alumni Sans Pinstripe', sans-serif;
+    font-size: 70px;
+    padding-top:10% ;
+    color:#fff;
+    border-bottom: solid white;
+}
+.containerText{
+    font-family: 'Alumni Sans Pinstripe', sans-serif;
+    font-size: 35px;
+    color:#fff;
+
+}
+.containerTitulo h1{
+    margin: 0%;
+}
+
+.icon1{
+    margin-top: 15%;
+    border-radius: 20px;
+    width: 60px;
+    height: 60px;
+    background-color: white;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    transition: 1.5s;
+}
+
+.icon1:hover{
+   background-color: rgba(255, 255, 255, 0.89);
+   border-radius: 40px;
+
+}
+
+.icon1 img{
+    min-height: 20px;
+}
+ul, li {
+    padding: 0;
+    margin: 0;
+    list-style: none inside;
+}
+ul.slider {
+    width: 880px;
+    height: 150px;
+
+    position:relative; /*Necesitamos que el ul sea relativo*/
+}
+ul.slider li {
+    width: 880px;
+    height: 150px;
+    opacity: 0; /*Ocultamos todos los <li>*/
+    transition: opacity .5s;
+    position: absolute; /*Posicionamos en absoluto los <li>*/
+    left: 0px;
+    top: 0px;
+    margin:50px;
+    padding:50px;
+    border:2px solid red;
+    background:#fff;
+}
+ul.slider li:first-child {
+    opacity: 1; /*Mostramos el primer <li>*/
+}
+ul.slider li:target {
+    opacity: 1; /*Mostramos el <li> al que apunta el enlace*/
+}
+nav ul{
+    display: flex;
+    flex-direction: row;
+    position:relative;
+    top:200px;
+    left:50px;
+    justify-content: center;
+    width: 880px;
+}
+
+.menu li{
+    margin: 10px;
+}
